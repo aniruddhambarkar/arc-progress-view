@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.aniruddhambarkar.arcprogressmeter.ArcProgressView
 import com.aniruddhambarkar.arcprogressview.ui.theme.ArcProgressViewTheme
 
@@ -35,7 +36,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     ArcProgressView(
-        modifier = Modifier,
+        modifier = Modifier.padding(top=90.dp),
         progress = 0.75f,
         gradientColors = listOf(
         Color(0xFF4C1D95),
