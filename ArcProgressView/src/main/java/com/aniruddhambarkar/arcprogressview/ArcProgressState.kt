@@ -6,18 +6,18 @@ import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.State
 @Composable
-fun rememberArcProgressIndicatorController(
+fun rememberArcProgressViewController(
     initialProgress: Float = 0f
-): ArcProgressIndicatorController {
+): ArcProgressViewController {
     return remember {
-        ArcProgressIndicatorController().apply {
+        ArcProgressViewController().apply {
             setProgress(initialProgress)
         }
     }
 }
 
 @Stable
-class ArcProgressIndicatorController {
+class ArcProgressViewController {
     private val _progress = mutableFloatStateOf(0f)
     val progressState: State<Float> get() = _progress
 

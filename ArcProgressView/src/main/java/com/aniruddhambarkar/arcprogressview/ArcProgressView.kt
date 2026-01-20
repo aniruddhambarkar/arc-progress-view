@@ -18,27 +18,17 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.geometry.Size
 
-class ArcProgressIndicator {
-}
-
 @Composable
-fun ArcProgressIndicator(
+fun ArcProgressView(
     modifier: Modifier = Modifier,
     progress: Float = 0f,
-    controller: ArcProgressIndicatorController,
     strokeWidth: Dp = 18.dp,
-    steps: Long,
-    goal: Int = 10_000,
     gradientColors: List<Color> =  listOf(
-        Color(0xFF4C1D95),
-        Color(0xFF7C3AED),
-        Color(0xFFEC4899),
-        Color(0xFF4C1D95)
+        Color(0xFFabacac)
     ),
     backgroundColor: Color = Color(0xFF2A2F4F),
     animationDuration: Int = 1200
 ) {
-    val progressValue = controller.progressState.value
     val animatedProgress by animateFloatAsState(
         targetValue = progress,
         animationSpec = tween(animationDuration, easing = FastOutSlowInEasing),

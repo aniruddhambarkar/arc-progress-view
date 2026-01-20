@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.aniruddhambarkar.arcprogressview"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.aniruddhambarkar.arcprogressview"
@@ -50,6 +50,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
 
     implementation(libs.androidx.material3)
+    implementation(project(":ArcProgressView"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
