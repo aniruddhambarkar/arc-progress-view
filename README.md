@@ -18,7 +18,7 @@ Ideal for visualizing goal-based progress such as **steps, fitness goals, tasks,
 
 ## 📸 Preview
 
-> Add screenshots or GIFs here to visually demonstrate the progress view.
+> Add screenshots or GIFs here to visually demonstrate the progress view.![img.png](img.png)
 
 ---
 
@@ -66,20 +66,6 @@ ArcProgressIndicator(
 )
 ```
 
----
-
-### Steps / Goal Example
-
-```kotlin
-ArcProgressIndicator(
-    progress = steps / goal.toFloat(),
-    state = rememberArcProgressState(),
-    steps = steps,
-    goal = 10_000
-)
-```
-
----
 
 ## 🧪 Compose Preview
 
